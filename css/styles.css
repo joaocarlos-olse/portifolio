@@ -74,8 +74,13 @@
     line-height: 10vh;
     padding-left: 30px;
     padding-right: 30px;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1.2em;    
+}
+
+.container-principal{
+    display: block;
+    height: 90vh;
 }
 
 .capa span {
@@ -83,17 +88,37 @@
 }
 
 .capa div {
-    display: inline-block;    
-    height: 650px;
+    display: inline-block;
+    align-items: center;
 }
 
 .img-capa {
-    width: 50vh;
-    text-align: center;    
+    width: 40%; 
+    text-align: center; 
 }
 
 .img-capa img {
     border-radius: 50%;
-    width: 50vh;
+    width: 320px;
+    height: 320px;
+    margin-top: 100px;
     object-fit: cover;
+}
+
+.profile-title{
+    vertical-align: top;
+    width: 55%;
+}
+
+.profile-title h1{
+    margin-top: 200px;
+    font-size: 4em;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+.profile-title h2{
+    font-size: 1.2em;
+    font-weight: 200;
 }
