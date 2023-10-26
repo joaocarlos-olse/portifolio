@@ -60,12 +60,12 @@
 .nav-bar {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: end;
     height: 10vh;
 }
 
 .item-menu{
-    flex-direction: row;
     line-height: 10vh;
     padding-right: 35px;
     font-weight: 300;
