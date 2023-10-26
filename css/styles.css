@@ -83,14 +83,13 @@
 }
 
 .capa div {
-    display: inline-block;
+    display: inline-block;    
     height: 650px;
 }
 
 .img-capa {
     width: 50vh;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .img-capa img {
