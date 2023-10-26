@@ -58,67 +58,77 @@
 
 /* PAGINA INDEX */
 .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
     height: 10vh;
 }
 
-.nav-bar ul {
-    list-style: none;
-    margin-top: 0;
-    padding: 0;
-    text-align: right;
+.item-menu{
+    flex-direction: row;
+    line-height: 10vh;
+    padding-right: 35px;
+    font-weight: 300;
+    font-size: 1.2em;
+    cursor: pointer;    
 }
 
-.nav-bar li {
-    display: inline-block;
-    align-items: center;
-    line-height: 10vh;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-weight: 300;
-    font-size: 1.2em;    
+.item-menu span:hover{
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--gelo);  
+}
+
+.item-menu span:active{
+    padding-bottom: 5px;
+    color: var(--amarelo);
+    border-bottom: 2px solid var(--amarelo);
+}
+
+.pagina-ativa{
+    font-weight: 400;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--amarelo);
 }
 
 .container-principal{
-    display: block;
+    display: flex;
     height: 90vh;
+    align-items: center;
+    justify-content: center;
 }
 
-.capa span {
-    display: block;
-}
-
-.capa div {
-    display: inline-block;
+.capa {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .img-capa {
-    width: 40%; 
-    text-align: center; 
+    width: 40%;
+    text-align: end;
+    margin-right: 2em;
 }
 
 .img-capa img {
     border-radius: 50%;
     width: 320px;
     height: 320px;
-    margin-top: 100px;
     object-fit: cover;
 }
 
 .profile-title{
-    vertical-align: top;
-    width: 55%;
+    text-align: start;
+    width: 60%;
 }
 
 .profile-title h1{
-    margin-top: 200px;
-    font-size: 4em;
-    font-weight: 400;
+    font-size: 7em;
+    font-weight: 500;
     text-transform: uppercase;
-    line-height: 60px;
+    line-height: 90px;
 }
 
 .profile-title h2{
-    font-size: 1.2em;
-    font-weight: 200;
+    font-size: 2em;
+    font-weight: 300;
 }
