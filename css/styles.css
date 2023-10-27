@@ -56,7 +56,7 @@
     background-color: var(--azul);
 }
 
-/* PAGINA INDEX */
+/* BARRA DE NAVEGAÇÃO */
 .nav-bar {
     display: flex;
     flex-direction: row;
@@ -90,13 +90,38 @@
     border-bottom: 2px solid var(--amarelo);
 }
 
-.container-principal{
+/* CONTAINERS */
+.container-main-index{
     display: flex;
     height: 90vh;
     align-items: center;
     justify-content: center;
 }
 
+.container-main-curriculo{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.container-tooper-curriculo{
+    display: flex;
+    position: relative;
+    width: 100%;
+    text-align: end;
+}
+
+.container-conteudo-curriculo{
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: end;
+}
+
+/* COMPONENTES PAGINA INDEX */
 .capa {
     display: flex;
     justify-content: space-between;
@@ -131,4 +156,35 @@
 .profile-title h2{
     font-size: 2em;
     font-weight: 300;
+}
+
+/* COMPONENTES PAGINA CURRICULO */
+.img-topper{
+    height: 220px;
+    justify-content: flex-end;
+}
+
+.img-footer{
+    height: 220px;
+    justify-content: flex-end;
+}
+
+.cv-title{
+    margin-top: 15px;
+    text-align: start;
+    width: 60%;
+}
+
+.cv-title h1{
+    font-size: 4em;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 90px;
+}
+
+.img-cv{
+    position: absolute;
+    right: 190px;
+    margin-top: 10px;
+    height: 180px;
 }
