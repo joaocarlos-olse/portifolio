@@ -84,6 +84,10 @@
     border-bottom: 2px solid var(--amarelo);
 }
 
+.menu-responsivo{
+    display: none;
+}
+
 .pagina-ativa{
     font-weight: 400;
     padding-bottom: 5px;
@@ -93,14 +97,13 @@
 /* CONTAINERS */
 .container-main-index{
     display: flex;
+    margin: auto;
     height: 90vh;
-    align-items: center;
-    justify-content: center;
+    width: 100vh;
 }
 
 .container-main-curriculo{
     display: flex;
-    flex-direction: row;
     margin: auto;
     align-items: center;
     width: 80%;
@@ -124,33 +127,35 @@
 /* COMPONENTES PAGINA INDEX */
 .capa {
     display: flex;
-    justify-content: space-between;
+    gap: 2em;
     align-items: center;
 }
 
 .img-capa {
-    width: 40%;
-    text-align: end;
-    margin-right: 2em;
+    width: auto;
 }
 
 .img-capa img {
     border-radius: 50%;
-    width: 320px;
-    height: 320px;
+    height: 20em;
+    width: 20em;
     object-fit: cover;
 }
 
 .profile-title{
     text-align: start;
-    width: 60%;
+    width: auto;
 }
 
 .profile-title h1{
     font-size: 7em;
     font-weight: 500;
     text-transform: uppercase;
-    line-height: 90px;
+    line-height: 110%;
+}
+
+.profile-title span{
+    display: block;
 }
 
 .profile-title h2{
@@ -187,4 +192,58 @@
     right: 190px;
     margin-top: 10px;
     height: 180px;
+}
+
+/* COMPONENTES PAGINA INDEX */
+@media only screen and (max-width: 1000px){
+    .item-menu{
+        display: none;
+    }
+
+    .menu-responsivo{
+        display: flex;
+        line-height: 10vh;
+        padding-right: 35px;
+        font-weight: 300;
+        font-size: 2em;
+        cursor: pointer;    
+    }
+
+    .capa {
+        display: flex;
+        gap: 2em;
+        align-items: center;
+    }
+    
+    .img-capa {
+        width: auto;
+    }
+    
+    .img-capa img {
+        border-radius: 50%;
+        height: 20em;
+        width: 20em;
+        object-fit: cover;
+    }
+    
+    .profile-title{
+        text-align: start;
+        width: auto;
+    }
+    
+    .profile-title h1{
+        font-size: 7em;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 110%;
+    }
+    
+    .profile-title span{
+        display: block;
+    }
+    
+    .profile-title h2{
+        font-size: 2em;
+        font-weight: 300;
+    }
 }
