@@ -1,12 +1,12 @@
-function mostrarFechar(){
-    console.log("click");
-    let botao = document.getElementById("menu-responivo");
-    let itens_menu = document.getElementsByClassName("item-menu");
+function abreFechaMenu(){
+    let menu_responsivo = document.getElementById("menu-responivo");
     
-    if(botao.style.display == none){
-        itens_menu.style.display = block;
+    if(menu_completo == "none"){
+        menu_completo.style.display = "flex";
+        menu_responsivo.style.display = "none";
     }
     else{
-        itens_menu.style.display = none;
+        menu_completo.style.display = "none";
+        menu_responsivo.style.display = "flex";
     }
 }

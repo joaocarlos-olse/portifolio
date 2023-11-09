@@ -59,13 +59,30 @@
 /* BARRA DE NAVEGAÇÃO */
 .nav-bar {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: end;
     height: 10vh;
 }
 
+.item-menu-icon{
+    display: inline-block;
+    line-height: 10vh;
+    padding-right: 35px;
+    font-weight: 300;
+    font-size: 2em;
+    cursor: pointer;    
+}
+
+#abreMenu, #fechaMenu{
+    display: none;
+
+}
+
+.itens-menu{
+    display: block;
+}
+
 .item-menu{
+    display: inline-block;
     line-height: 10vh;
     padding-right: 35px;
     font-weight: 300;
@@ -84,8 +101,8 @@
     border-bottom: 2px solid var(--amarelo);
 }
 
-.menu-responsivo{
-    display: none;
+.item-menu-responsivo{
+    display: block;
 }
 
 .pagina-ativa{
@@ -196,17 +213,12 @@
 
 /* COMPONENTES PAGINA INDEX */
 @media only screen and (max-width: 1000px){
-    .item-menu{
-        display: none;
+    #abreMenu, #fechaMenu{
+        display: inline-block;
     }
 
-    .menu-responsivo{
-        display: flex;
-        line-height: 10vh;
-        padding-right: 35px;
-        font-weight: 300;
-        font-size: 2em;
-        cursor: pointer;    
+    .itens-menu{
+        display: none;
     }
 
     .capa {
