@@ -1,12 +1,11 @@
 function abreFechaMenu(){
-    let menu_responsivo = document.getElementById("menu-responivo");
-    
-    if(menu_completo == "none"){
-        menu_completo.style.display = "flex";
-        menu_responsivo.style.display = "none";
+    var item_menu = document.getElementsByClassName("item-menu");
+    var icone_menu = document.getElementById("abreFechaMenu");
+
+    for (var i = 0; i < item_menu.length; i++) {
+        item_menu[i].classList.toggle("item-menu-block");
     }
-    else{
-        menu_completo.style.display = "none";
-        menu_responsivo.style.display = "flex";
-    }
+
+    icone_menu.classList.toggle("bi-list");
+    icone_menu.classList.toggle("bi-x-lg");
 }
