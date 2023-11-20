@@ -117,7 +117,7 @@
     width: 30%;
     height: auto;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 5px 30px;
     border: 1px solid var(--preto);
     border-radius: 5px;
@@ -386,7 +386,7 @@
   .container-conteudo-contato input,
   textarea {
     width: 100%;
-    padding: 12px;
+    padding: 8px;
     margin-bottom: 16px;
     box-sizing: border-box;
     border: 1px solid var(--azul);
