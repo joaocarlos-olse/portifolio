@@ -108,9 +108,9 @@
     display: block;
     min-width: 500px;
     width: 30%;
-    height: 70vh;
+    height: auto;
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 50px;
     padding: 15px 30px;
     border: 1px solid var(--preto);
     border-radius: 5px;
