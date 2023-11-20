@@ -1,4 +1,5 @@
 function abreFechaMenu(){
+    var itens_menu = document.getElementById("itens-menu");
     var item_menu = document.getElementsByClassName("item-menu");
     var icone_menu = document.getElementById("abreFechaMenu");
 
@@ -8,4 +9,6 @@ function abreFechaMenu(){
 
     icone_menu.classList.toggle("bi-list");
     icone_menu.classList.toggle("bi-x-lg");
+
+    itens_menu.classList.toggle("animacao-menu-responsivo");
 }

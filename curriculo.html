@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Currículo</title>
 </head>
 <body class="bg-branco">
 
     <div class="nav-bar bg-preto">
-        <div class="item-menu texto-branco"><span>Home</span></div>
-        <div class="item-menu texto-branco"><span >Portifólio</span></div>
-        <div class="item-menu texto-branco"><span class="pagina-ativa">Currículo</span></div>
-        <div class="item-menu texto-branco"><span>Contato</span></div>
+        <div class="item-menu-icon texto-branco"><span class="bi bi-list" id="abreFechaMenu" onclick="abreFechaMenu()"></span></div>
+        <div class="itens-menu" id="itens-menu">
+            <div class="item-menu texto-branco"><a href="index.html">Home</a></div>
+            <div class="item-menu texto-branco"><a href="">Portifólio</a></div>
+            <div class="item-menu texto-branco"><a href="curriculo.html" class="pagina-ativa">Currículo</a></div>
+            <div class="item-menu texto-branco"><a href="">Contato</a></div>
+        </div>
     </div>
 
     <main class="container-main-curriculo">
-
         <div class="container-tooper-curriculo">
             <div class="cv-title">
                 <h1>
@@ -28,13 +27,64 @@
                     <span class="texto-preto">Oliveira Sebastião</span>
                 </h1>
             </div>                
-            <img src="images/perfil_image.JPG" alt="" class="img-cv">            
-            <img src="images/topper-curriculo.png" alt="" class="img-topper">            
+            <div class="img-cv">
+                <img src="images/perfil_image.JPG" alt="">
+            </div>           
         </div>
 
-        <!-- <div class="container-conteudo-curriculo">
-
-        </div> -->
+        <div class="container-conteudo-curriculo">
+            <div class="barra-lateral">
+                <h2 class="titulo-sessao-curriculo texto-azul">contato</h2>
+                <div class="info texto-azul">
+                    <i class="bi bi-envelope"></i>
+                    <span>jocaolse@gmail.com</span>
+                </div>
+                <div class="info texto-azul">
+                    <i class="bi bi-facebook"></i>
+                    <span>/joaocarlos.olse</span>
+                </div>
+                <div class="info texto-azul">
+                    <i class="bi bi-instagram"></i>
+                    <span>@joaocarlos.olse</span>
+                </div>
+                <div class="info texto-azul">
+                    <i class="bi bi-whatsapp"></i>
+                    <span>(xx) 99999-9999</span>
+                </div>
+                <div class="info texto-azul">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Campina do Monte Alegre - SP</span>
+                </div>
+            </div>
+            <div class="conteudo-curriculo">
+                <h2 class="titulo-sessao-curriculo texto-preto">APRESENTAÇÃO</h2>
+                <h3 class="subtitulo-sessao-curriculo">Formação</h3 class="subtitulo-sessao-curriculo">
+                <ul>
+                  <li>Bacharel em Administração, pelo Instituto Itapetiningano de Ensino Superior — IIES, 2012-2015;</li>
+                  <li>Pós-graduação lato sensu em Administração de Recursos Humanos, pela Universidade Paulista — UNIP, 2017-2018;</li>
+                  <li>Pós-graduação lato sensu em Informática Aplicada à Educação, pelo Instituto Federal De Educação, Ciência E Tecnologia De São Paulo — IFSP Campus Itapetininga, Cursando 3º semestre;</li>
+                  <li>Tecnólogo em Análise e Desenvolvimento de Sistemas, pela Faculdade de Tecnologia “Prof. Antônio Belizandro Barbosa Rezende”— Fatec de Itapetininga, Cursando 5º semestre.</li>
+                </ul>
+              
+                <h3 class="subtitulo-sessao-curriculo">Experiência</h3 class="subtitulo-sessao-curriculo">
+                <ul>
+                  <li>Estagiário no Programa Acessa Escola - Governo do Estado de São Paulo, 2010-2010;</li>
+                  <li>Freelancer em desenvolvimento web 2011-2014;</li>
+                  <li>Agente de Organização Escolar – Governo do Estado de São Paulo, 2012-2021;</li>
+                  <li>Assessor Municipal de Educação e Cultura – Campina do Monte Alegre/SP, 2021-2022.</li>
+                  <li>Gerente de Organização Escolar – Governo do Estado de São Paulo, 2022-Atual.</li>
+                </ul>
+              
+                <h3 class="subtitulo-sessao-curriculo">Cursos de Aperfeiçoamento</h3 class="subtitulo-sessao-curriculo">
+                <ul>
+                  <li>Curso Básico de Informática — Prefeitura Municipal de Campina do Monte Alegre — 2002;</li>
+                  <li>Curso de Auxiliar de Recursos Humanos — Edid Informática — 2007;</li>
+                  <li>Curso Básico do Windows XP, Word 2007 e Excel 2007 — Edid Informática — 2007;</li>
+                  <li>Curso de Web Designer — Photoshop, Dreamweaver, Fireworks, Flash, HTML e Corel Draw — Easycomp — 2010;</li>
+                  <li>Curso de Recepção em Atendimento — Via Rápida Emprego / Centro Paula Souza — 2011;</li>
+                </ul>
+            </div>
+        </div>
 
     </main>   
 </body>

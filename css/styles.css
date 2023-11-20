@@ -16,6 +16,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
+    box-sizing: border-box;
 }
 
 /* CORES PADRÃO PARA TEXTO */
@@ -60,6 +61,43 @@
     background-color: var(--azul);
 }
 
+/* CONTAINERS */
+.container-main-index{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    margin: auto;
+    width: 100vw;
+}
+
+.container-main-curriculo{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container-tooper-curriculo{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    justify-content: space-between;
+    background-image: url("../images/topper-curriculo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.container-conteudo-curriculo{
+    display: inline-block;
+    width: 100%;
+    margin-top: 40px;
+    background-image: url("../images/footer-curriculo.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
 /* BARRA DE NAVEGAÇÃO */
 .nav-bar {
     display: block;
@@ -75,19 +113,24 @@
 
 .item-menu{
     display: inline-block;
+}
+
+.item-menu a{
+    color: inherit;
+    text-decoration: none;
     line-height: 10vh;
-    padding-right: 35px;
-    font-weight: 300;
-    font-size: 1.2em;
+    margin: 0px 35px;
+    font-weight: 400;
+    font-size: 25px;
     cursor: pointer;    
 }
 
-.item-menu span:hover{
+.item-menu a:hover{
     padding-bottom: 5px;
     border-bottom: 2px solid var(--vermelho);
 }
 
-.item-menu span:active{
+.item-menu a:active{
     padding-bottom: 5px;
     color: var(--amarelo);
     border-bottom: 2px solid var(--amarelo);
@@ -106,36 +149,6 @@
     font-weight: 400;
     padding-bottom: 5px;
     border-bottom: 2px solid var(--amarelo);
-}
-
-/* CONTAINERS */
-.container-main-index{
-    display: flex;
-    justify-content: center;
-    height: 90vh;
-    margin: auto;
-    width: 100vw;
-}
-
-.container-main-curriculo{
-    display: flex;
-    align-items: center;
-    width: 80%;
-    max-width: 1200px;
-}
-
-.container-tooper-curriculo{
-    display: flex;
-    position: relative;
-    width: 100%;
-    text-align: end;
-}
-
-.container-conteudo-curriculo{
-    display: block;
-    position: relative;
-    width: 100%;
-    text-align: end;
 }
 
 /* COMPONENTES PAGINA INDEX */
@@ -182,34 +195,90 @@
 }
 
 /* COMPONENTES PAGINA CURRICULO */
-.img-topper{
-    height: 220px;
-    justify-content: flex-end;
-}
-
-.img-footer{
-    height: 220px;
-    justify-content: flex-end;
-}
-
 .cv-title{
-    margin-top: 15px;
+    display: inline-block;
+    margin-top: 50px;
     text-align: start;
-    width: 60%;
+    max-width: 70%;
 }
 
 .cv-title h1{
-    font-size: 4em;
-    font-weight: 500;
+    font-size: 3em;
+    font-weight: 800;
     text-transform: uppercase;
     line-height: 90px;
 }
 
+.cv-title span{
+    display: block;
+}
+
 .img-cv{
-    position: absolute;
-    right: 190px;
-    margin-top: 10px;
+    margin-top: 40px;
+    padding-right: 110px;
+    display: inline-block;
+    text-align: right;
+    width: 25%;
+}
+
+.img-cv img{
     height: 180px;
+}
+
+.barra-lateral{
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    margin-right: 30px;
+    border-top: 10px solid var(--azul);
+}
+
+.info{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.info p{
+    margin-left: 10px;
+}
+
+.info i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.titulo-sessao-curriculo{
+    display: block;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 200%;
+}
+
+.conteudo-curriculo{
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 15px;
+    margin-bottom: 100px;
+    width: 70%;
+    border-top: 10px solid var(--preto);
+}
+
+.conteudo-curriculo li{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 200%;
+}
+
+.subtitulo-sessao-curriculo{
+    display: block;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 300%;
+    margin-top: 30px;
 }
 
 /* ANIMAÇÕES */
@@ -237,6 +306,27 @@
     }
     50% {
         opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes navegacao-responsivo {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.8;
     }
     100% {
         opacity: 1;
@@ -300,5 +390,10 @@
 
 /* Seletor para alterar a visibilidade dos itens do menu */
 .item-menu-block{
-    display: inline-block;   
+    display: inline-block;
+}
+
+.animacao-menu-responsivo{
+    animation-name: navegacao-responsivo;
+    animation-duration: 0.8s;
 }
