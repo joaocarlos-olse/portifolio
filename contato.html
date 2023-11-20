@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <script src="js/scripts.js" defer></script>
+    <title>Contato</title>
+</head>
+<body>
+    <div class="nav-bar bg-preto">
+        <div class="item-menu-icon texto-branco"><span class="bi bi-list" id="abreFechaMenu" onclick="abreFechaMenu()"></span></div>
+        <div class="itens-menu" id="itens-menu">
+            <div class="item-menu texto-branco"><a href="index.html">Home</a></div>
+            <div class="item-menu texto-branco"><a href="portifolio.html">Portifólio</a></div>
+            <div class="item-menu texto-branco"><a href="curriculo.html">Currículo</a></div>
+            <div class="item-menu texto-branco"><a href="contato.html" class="pagina-ativa">Contato</a></div>
+        </div>
+    </div>
+
+    <div class="container-conteudo-contato bg-branco">
+        <h2 class="contato-title">Entre em Contato</h2>
+        <form action="" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <div class="botao-enviar">
+                <button type="buttom">
+                    <i class="bi bi-eraser"></i>
+                    Limpar
+                </button>
+                <button type="buttom">
+                    <i class="bi bi-send"></i>
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
